@@ -18,14 +18,4 @@ export const App = () => {
   );
 }
 
-// const mapStateToProps = ({ orders }) => ({
-//   orders
-// });
-//
-// const mapDispatchToProps = dispatch => (
-//   {
-//     setOrders: (orders) => dispatch(setOrders(orders))
-//   }
-// );
-
 export default App;
