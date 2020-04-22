@@ -64,6 +64,7 @@ class OrderForm extends Component {
     const ingredientButtons = possibleIngredients.map((ingredient) => {
       return (
         <button
+          data-testid={ingredient}
           key={ingredient}
           name={ingredient}
           onClick={(e) => this.handleIngredientChange(e)}
@@ -80,6 +81,7 @@ class OrderForm extends Component {
           placeholder="Name"
           name="name"
           value={this.state.name}
+          data-testid={this.state.name}
           onChange={(e) => this.handleNameChange(e)}
         />
 
