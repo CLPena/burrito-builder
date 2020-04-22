@@ -1,8 +1,7 @@
-import React from 'react';
-import './App.css';
-import Orders from '../../components/Orders/Orders';
-import OrderForm from '../../components/OrderForm/OrderForm';
-
+import React from "react";
+import "./App.css";
+import Orders from "../../components/Orders/Orders";
+import OrderForm from "../../components/OrderForm/OrderForm";
 
 export const App = () => {
   return (
@@ -13,9 +12,8 @@ export const App = () => {
       </header>
 
       <Orders />
-
     </main>
   );
-}
+};
 
 export default App;
