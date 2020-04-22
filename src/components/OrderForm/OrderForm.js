@@ -6,12 +6,20 @@ class OrderForm extends Component {
     this.props = props;
     this.state = {
       name: '',
-      ingredients: []
+      ingredients: [],
     };
   }
 
   handleNameChange = e => {
     this.setState({ [e.target.name]: e.target.value });
+  }
+
+  checkFields = () => {
+    if(this.state.ingredients.length === 0) {
+      alert('You need at least one ingredient to submit an order!')
+    } else {
+      //code to submit form here
+    }
   }
 
   handleIngredientChange = e => {
@@ -21,6 +29,7 @@ class OrderForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    this.checkFields();
     this.clearInputs();
   }
 
